@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+    <title>TodoLIst待辦事項</title>
+</head>
+<style>
+
+
+
+</style>
+
+<body>
+
+    <h1 class="py-3 bg-light container">TodoList</h1>
+    <section class="container py-4  bg-cover rounded"
+        style="background-image:
+        url(images/photo-1503551723145-6c040742065b.jpg); height:
+        450px;">
+        <div class="row justify-content-end">
+            <div class="col-7 py-3 mr-3 bg-lighter rounded">
+                <div class="input-group mb-3 ">
+                    <input type="text" class="form-control todoInput" placeholder="你計畫要..." id="newTodo">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary addBtn" type="button" id="addBtn">add</button>
+                    </div>
+                </div>
+                <div class=" d-flex justify-content-between mb-3">
+                    <span>有 <span id="taskCount" class="font-weight-bold text-info">0</span> 筆任務</span>
+                    <a href="#" class="font-weight-bold btn btn-outline-info" id="clearBtn">清除所有任務</a>
+                </div>
+                <div style="max-height: 285px;overflow: auto;">
+                    <ul class="list-group list-group-flush text-left" id="todoList"></ul>
+                    
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <script src="js/all.js"></script>
+</body>
+
+</html>
